@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energías Renovables - EnergyTelco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header>
+        <div class="logo">
+            <h1>EnergyTelco</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="asesoria-energetica.html">Asesoría Energética</a></li>
+                <li><a href="comparador.html">Comparador</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="renovables.html">Energías Renovables</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Energías Renovables -->
+    <section id="renovables">
+        <h2>Nuestras Energías Renovables</h2>
+        <p>En EnergyTelco ofrecemos una amplia gama de tecnologías renovables para optimizar el consumo energético de tu empresa o vivienda.</p>
+        <ul>
+            <li>⚡ <strong>Paneles Solares Fotovoltaicos:</strong> Aprovecha la energía solar para generar electricidad de manera eficiente.</li>
+            <li>🔥 <strong>Biomasa (Pellets):</strong> Energía térmica mediante la quema de biomasa, ideal para calefacción.</li>
+            <li>💨 <strong>Energía Eólica:</strong> Generación de electricidad mediante aerogeneradores que capturan la energía del viento.</li>
+            <li>☀️ <strong>Paneles Solares Térmicos:</strong> Aprovecha la energía solar para calentar agua y generar calefacción.</li>
+            <li>🌱 <strong>Biocombustibles:</strong> Energía sostenible con bajo impacto ambiental.</li>
+            <li>💧 <strong>Geotermia:</strong> Uso del calor subterráneo para calefacción y refrigeración.</li>
+            <li>💧 <strong>Aerotermia:</strong> Sistema eficiente de calefacción y refrigeración basado en la energía del aire.</li>
+            <li>🌍 <strong>Comunidades Energéticas:</strong> Participa en comunidades que comparten y generan energía renovable de manera colectiva.</li>
+            <li>⚡ <strong>Modelo PPA (Power Purchase Agreement):</strong> Contrato de compra de energía a largo plazo que asegura el abastecimiento de energía limpia.</li>
+            <li>🌊 <strong>Energía Mareomotriz e Hidráulica:</strong> Aprovechamiento del agua para generar energía sostenible.</li>
+            <li>🔋 <strong>Almacenamiento de Energía:</strong> Baterías para almacenar energía generada por fuentes renovables y utilizarla cuando sea necesario.</li>
+            <li>🚗 <strong>Cargadores de Vehículos Eléctricos (VE):</strong> Instalación de cargadores para vehículos eléctricos en hogares y empresas.</li>
+            <li>💡 <strong>Hidrógeno Verde:</strong> Energía limpia y renovable producida mediante electrólisis del agua con fuentes renovables.</li>
+        </ul>
+    </section>
+
+    <!-- Sección de Preguntas para Optimización -->
+    <section id="optimizacion">
+        <h2>Personaliza tu Solución Energética</h2>
+        <p>Ayúdanos a identificar tus necesidades energéticas para ofrecerte la mejor solución.</p>
+        <form id="form-energia">
+            <label for="tipo-consumo">¿Cuál es tu mayor consumo energético?</label>
+            <select id="tipo-consumo" name="tipo-consumo" required>
+                <option value="electricidad">Electricidad</option>
+                <option value="agua-caliente">Agua Caliente</option>
+                <option value="calefaccion">Calefacción</option>
+                <option value="aire-acondicionado">Aire Acondicionado</option>
+            </select>
+
+            <label for="consumo-estimado">¿Cuál es tu consumo mensual estimado (kWh)?</label>
+            <input type="number" id="consumo-estimado" name="consumo-estimado" required>
+
+            <label for="espacio-disponible">¿Tienes espacio disponible para instalaciones solares o eólicas?</label>
+            <select id="espacio-disponible" name="espacio-disponible" required>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="interes-tecnologias">¿Qué tecnología te interesa más?</label>
+            <select id="interes-tecnologias" name="interes-tecnologias">
+                <option value="solar-fotovoltaica">Solar Fotovoltaica</option>
+                <option value="solar-termica">Solar Térmica</option>
+                <option value="eolica">Eólica</option>
+                <option value="biomasa">Biomasa (Pellets)</option>
+                <option value="geotermia">Geotermia</option>
+                <option value="aerotermia">Aerotermia</option>
+                <option value="hidrogeno-verde">Hidrógeno Verde</option>
+                <option value="almacenamiento">Almacenamiento de Energía</option>
+                <option value="cargadores-ve">Cargadores de VE</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 EnergyTelco. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlace al script -->
+    <script src="script.js"></script>
+</body>
+</html>
