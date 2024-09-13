@@ -96,3 +96,61 @@ footer {
     color: #fff;
     padding: 10px;
 }
+/* Sección de Energías Renovables */
+#renovables {
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+#renovables h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#renovables ul {
+    list-style: none;
+    padding: 0;
+}
+
+#renovables ul li {
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+/* Sección de Preguntas para Optimización */
+#optimizacion {
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#optimizacion form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#optimizacion form label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+#optimizacion form select, 
+#optimizacion form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#optimizacion form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#optimizacion form button:hover {
+    background-color: #555;
+}
