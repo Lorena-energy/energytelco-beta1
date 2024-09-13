@@ -11,6 +11,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
         alert('Formulario enviado correctamente.');
     }
 });
+
 // Validar el formulario de energía renovable
 document.getElementById('form-energia').addEventListener('submit', function(event) {
     let tipoConsumo = document.getElementById('tipo-consumo').value;
