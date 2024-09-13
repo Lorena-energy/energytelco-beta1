@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesoría Energética - EnergyTelco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header>
+        <div class="logo">
+            <h1>EnergyTelco</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="asesoria-energetica.html">Asesoría Energética</a></li>
+                <li><a href="comparador.html">Comparador</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Asesoría Energética -->
+    <section id="asesoria-energetica">
+        <h2>Asesoría Energética Personalizada</h2>
+        <p>Sube tu factura de energía y te ayudaremos a encontrar la mejor oferta del mercado.</p>
+        
+        <form id="form-factura" enctype="multipart/form-data">
+            <label for="factura">Sube tu factura:</label>
+            <input type="file" id="factura" name="factura" accept=".pdf,.jpg,.png" required>
+            
+            <label for="consumo">Consumo estimado (kWh):</label>
+            <input type="number" id="consumo" name="consumo" required>
+
+            <button type="submit">Enviar factura</button>
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>© 2024 EnergyTelco. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
