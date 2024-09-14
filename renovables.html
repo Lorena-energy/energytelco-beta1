@@ -72,14 +72,63 @@
                 <option value="solar-fotovoltaica">Solar Fotovoltaica</option>
                 <option value="hibridos">Paneles Híbridos Fotovoltaicos y Térmicos</option>
                 <option value="eolica">Eólica</option>
+                <option value="Comunidades solares">Comunidades solares</option>
+                <option value="Alquiler de tejado para Comunidades energéticas">Alquiler de tejado para Comunidades energéticas</option>
                 <option value="biomasa">Biomasa (Pellets)</option>
                 <option value="geotermia">Geotermia</option>
                 <option value="aerotermia">Aerotermia</option>
                 <option value="hidrogeno-verde">Hidrógeno Verde</option>
                 <option value="almacenamiento">Almacenamiento de Energía</option>
                 <option value="cargadores-ve">Cargadores de VE</option>
+                <option value="PPA">PPA</option>
                 <option value="hibridación de tecnologías según necesidades">hibridación de tecnologías según necesidades</option>
             </select>
+
+            <section id="optimizacion">
+
+    <!-- Nuevo formulario combinado con campo de teléfono -->
+    <form action="submit-formulario.php" method="POST" enctype="multipart/form-data">
+        <!-- Datos de contacto -->
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Número de Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" required>
+
+        <label for="ubicacion">Ubicación:</label>
+        <input type="text" id="ubicacion" name="ubicacion" required>
+
+        <!-- Datos energéticos -->
+        <label for="tipo-consumo">¿Cuál es tu mayor consumo energético?</label>
+        <select id="tipo-consumo" name="tipo-consumo" required>
+            <option value="electricidad">Electricidad</option>
+            <option value="agua-caliente">Agua Caliente</option>
+            <option value="calefaccion">Calefacción</option>
+            <option value="aire-acondicionado">Aire Acondicionado</option>
+        </select>
+
+        <label for="consumo-estimado">¿Cuál es tu consumo mensual estimado (kWh)?</label>
+        <input type="number" id="consumo-estimado" name="consumo-estimado" required>
+
+        <label for="espacio-disponible">¿Tienes espacio disponible para instalaciones solares o eólicas?</label>
+        <select id="espacio-disponible" name="espacio-disponible" required>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <!-- Factura y combustibles -->
+        <label for="factura">Subir Factura de la Luz:</label>
+        <input type="file" id="factura" name="factura" accept=".pdf,.jpg,.jpeg,.png" required>
+
+        <label for="combustibles">¿Usas Combustibles (diésel, gasolina, propano)?</label>
+        <textarea id="combustibles" name="combustibles" placeholder="Describe el uso y cantidad de combustibles, si aplica..."></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+</section>
 
             <button type="submit">Enviar</button>
         </form>
