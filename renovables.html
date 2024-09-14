@@ -31,14 +31,14 @@
         <ul>
             <li>⚡ <strong>Paneles Solares Fotovoltaicos:</strong> Aprovecha la energía solar para generar electricidad de manera eficiente.</li>
             <li>🔥 <strong>Biomasa (Pellets):</strong> Energía térmica mediante la quema de biomasa, ideal para calefacción.</li>
-            <li>💨 <strong>Energía Eólica:</strong> Generación de electricidad mediante aerogeneradores que capturan la energía del viento.</li>
+            <li>💨 <strong>Energía minieólica:</strong> Generación de electricidad mediante aerogeneradores que capturan la energía del viento.</li>
             <li>☀️ <strong>Paneles Híbridos Fotovoltaicos y Térmicos:</strong> Una solución avanzada que combina la generación de electricidad y calor en un solo sistema.</li>
             <li>🌱 <strong>Biocombustibles:</strong> Energía sostenible con bajo impacto ambiental.</li>
             <li>💧 <strong>Geotermia:</strong> Uso del calor subterráneo para calefacción y refrigeración.</li>
             <li>💧 <strong>Aerotermia:</strong> Sistema eficiente de calefacción y refrigeración basado en la energía del aire.</li>
             <li>🌍 <strong>Comunidades Energéticas:</strong> Participa en comunidades que comparten y generan energía renovable de manera colectiva.</li>
             <li>⚡ <strong>Modelo PPA (Power Purchase Agreement):</strong> Contrato de compra de energía a largo plazo que asegura el abastecimiento de energía limpia.</li>
-            <li>🌊 <strong>Energía Mareomotriz e Hidráulica:</strong> Aprovechamiento del agua para generar energía sostenible.</li>
+            <li>🌊 <strong>Energía minihidráulica:</strong> Aprovechamiento del agua para generar energía sostenible.</li>
             <li>🔋 <strong>Almacenamiento de Energía:</strong> Baterías para almacenar energía generada por fuentes renovables y utilizarla cuando sea necesario.</li>
             <li>🚗 <strong>Cargadores de Vehículos Eléctricos (VE):</strong> Instalación de cargadores para vehículos eléctricos en hogares y empresas.</li>
             <li>💡 <strong>Hidrógeno Verde:</strong> Energía limpia y renovable producida mediante electrólisis del agua con fuentes renovables.</li>
@@ -58,10 +58,10 @@
                 <option value="aire-acondicionado">Aire Acondicionado</option>
             </select>
 
-            <label for="consumo-estimado">¿Cuál es tu consumo mensual estimado (kWh)?</label>
+            <label for="consumo-estimado">¿Cuál es tu consumo mensual estimado en kWh o €?</label>
             <input type="number" id="consumo-estimado" name="consumo-estimado" required>
 
-            <label for="espacio-disponible">¿Tienes espacio disponible para instalaciones solares o eólicas?</label>
+            <label for="espacio-disponible">¿Tienes espacio disponible para instalaciones solares, eólicas o híbridas?</label>
             <select id="espacio-disponible" name="espacio-disponible" required>
                 <option value="si">Sí</option>
                 <option value="no">No</option>
@@ -78,6 +78,7 @@
                 <option value="hidrogeno-verde">Hidrógeno Verde</option>
                 <option value="almacenamiento">Almacenamiento de Energía</option>
                 <option value="cargadores-ve">Cargadores de VE</option>
+                <option value="hibridación de tecnologías según necesidades">hibridación de tecnologías según necesidades</option>
             </select>
 
             <button type="submit">Enviar</button>
