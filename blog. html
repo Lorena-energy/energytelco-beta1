@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog sobre Energías Renovables - EnergyTelco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header>
+        <div class="logo">
+            <h1>EnergyTelco</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="asesoria-energetica.html">Asesoría Energética</a></li>
+                <li><a href="comparador.html">Comparador</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="renovables.html">Energías Renovables</a></li>
+                <li><a href="blog.html">Blog</a></li> <!-- Enlace al blog -->
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección del Blog -->
+    <section id="blog">
+        <h2>Blog de Energías Renovables</h2>
+        <p>Explora nuestros artículos educativos sobre las diferentes tecnologías renovables y descubre casos de éxito de su implementación en empresas y hogares.</p>
+
+        <div class="articulos-blog">
+            <article>
+                <h3><a href="articulo-solar.html">Beneficios de los Paneles Híbridos Fotovoltaicos y Térmicos</a></h3>
+                <p>Descubre cómo esta tecnología avanzada está revolucionando la forma de generar energía y calor en un solo sistema. <a href="articulo-solar.html">Leer más...</a></p>
+            </article>
+            
+            <article>
+                <h3><a href="articulo-eolica.html">Casos de Éxito: Energía Eólica en Zonas Rurales</a></h3>
+                <p>Conoce cómo la energía eólica ha transformado comunidades rurales y empresas que han apostado por la sostenibilidad. <a href="articulo-eolica.html">Leer más...</a></p>
+            </article>
+
+            <article>
+                <h3><a href="articulo-hidrogeno.html">El Futuro del Hidrógeno Verde</a></h3>
+                <p>Explora el potencial del hidrógeno verde como fuente de energía limpia para el transporte y la industria. <a href="articulo-hidrogeno.html">Leer más...</a></p>
+            </article>
+
+            <article>
+                <h3><a href="articulo-ppa.html">Modelo PPA: Energía Limpia con Contratos a Largo Plazo</a></h3>
+                <p>Descubre cómo las empresas están asegurando energía limpia y reduciendo costos mediante contratos PPA. <a href="articulo-ppa.html">Leer más...</a></p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 EnergyTelco. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
