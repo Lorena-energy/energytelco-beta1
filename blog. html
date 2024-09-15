@@ -19,7 +19,7 @@
                 <li><a href="comparador.html">Comparador</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
                 <li><a href="renovables.html">Energías Renovables</a></li>
-                <li><a href="blog.html">Blog</a></li> <!-- Enlace al blog -->
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -35,7 +35,7 @@
                 <h3><a href="articulo-solar.html">Beneficios de los Paneles Híbridos Fotovoltaicos y Térmicos</a></h3>
                 <p>Descubre cómo esta tecnología avanzada está revolucionando la forma de generar energía y calor en un solo sistema. <a href="articulo-solar.html">Leer más...</a></p>
             </article>
-            
+
             <article>
                 <h3><a href="articulo-eolica.html">Casos de Éxito: Energía Eólica en Zonas Rurales</a></h3>
                 <p>Conoce cómo la energía eólica ha transformado comunidades rurales y empresas que han apostado por la sostenibilidad. <a href="articulo-eolica.html">Leer más...</a></p>
@@ -59,7 +59,6 @@
     </footer>
 </body>
 </html>
-
 
 <!-- Chatbot flotante -->
 <div id="chatbot">
