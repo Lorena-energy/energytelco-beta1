@@ -1,55 +1,36 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparador de Comercializadoras - EnergyTelco</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Menú de Navegación -->
-    <header>
-        <div class="logo">
-            <h1>EnergyTelco</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="asesoria-energetica.html">Asesoría Energética</a></li>
-                <li><a href="comparador.html">Comparador</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<section id="comparador">
+    <h2>Comparador de Comercializadoras</h2>
+    <p>Consulta las mejores ofertas de energía y telecomunicaciones disponibles para ti.</p>
 
-    <!-- Sección de Comparador -->
-    <section id="comparador">
-        <h2>Comparador de Comercializadoras</h2>
-        <p>Consulta las mejores ofertas de energía y telecomunicaciones disponibles para ti.</p>
-        <!-- Aquí podríamos añadir una tabla con las diferentes opciones de comercializadoras -->
-    </section>
+    <form id="form-comparador">
+        <label for="consumo">Consumo estimado mensual (kWh):</label>
+        <input type="number" id="consumo" name="consumo" required>
 
-    <!-- Pie de Página -->
-    <footer>
-        <p>© 2024 EnergyTelco. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+        <label for="codigo-postal">Código Postal:</label>
+        <input type="text" id="codigo-postal" name="codigo-postal" required>
 
-<!-- Chatbot flotante -->
-<div id="chatbot">
-    <div id="chat-icon" onclick="toggleChat()">
-        💬
-    </div>
-    <div id="chat-window" class="hidden">
-        <div id="chat-header">
-            <h3>Asistente EnergyTelco</h3>
-            <button onclick="toggleChat()">X</button>
-        </div>
-        <div id="chat-messages">
-            <!-- Mensajes del chatbot aparecerán aquí -->
-        </div>
-        <input type="text" id="chat-input" placeholder="Escribe tu mensaje..." onkeydown="handleChat(event)">
-    </div>
-</div>
+        <label for="energia">Tipo de Energía:</label>
+        <select id="energia" name="energia">
+            <option value="electricidad">Electricidad</option>
+            <option value="gas">Gas</option>
+            <option value="ambos">Ambos</option>
+        </select>
+
+        <button type="submit">Comparar</button>
+    </form>
+
+    <table id="tabla-comparacion">
+        <thead>
+            <tr>
+                <th>Comercializadora</th>
+                <th>Precio por kWh</th>
+                <th>Duración del contrato</th>
+                <th>Tipo de tarifa</th>
+                <th>Enlace para contratar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se agregarán dinámicamente las opciones de comercializadoras -->
+        </tbody>
+    </table>
+</section>
