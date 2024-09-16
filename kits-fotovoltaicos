@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kits Fotovoltaicos Aislados - EnergyTelco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header>
+        <div class="logo">
+            <h1>EnergyTelco</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="asesoria-energetica.html">Asesoría Energética</a></li>
+                <li><a href="comparador.html">Comparador</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección: Kits Fotovoltaicos Aislados -->
+    <section id="productos">
+        <h2>Kits Fotovoltaicos Aislados</h2>
+        <div class="producto">
+            <h4>Kit Solar Aislado 3000W</h4>
+            <p>Ideal para zonas rurales sin acceso a la red eléctrica. Incluye paneles solares y batería.</p>
+            <button>Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <h4>Kit Solar Aislado 5000W</h4>
+            <p>Perfecto para grandes instalaciones aisladas con alto consumo energético.</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>© 2024 EnergyTelco. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
