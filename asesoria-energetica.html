@@ -23,17 +23,60 @@
         </nav>
     </header>
 
+    <!-- Descripción de la Asesoría Energética Personalizada -->
+    <section id="descripcion-asesoria">
+        <h2>¿Qué es la Asesoría Energética Personalizada?</h2>
+        <p>En EnergyTelco, ofrecemos una asesoría energética personalizada diseñada para facilitarte el acceso a las mejores opciones energéticas. No recibirás llamadas molestas de cientos de comerciales ni perderás tiempo comparando opciones.</p>
+        <p>Nosotros analizamos tus necesidades energéticas basándonos en tus facturas de luz y gas, tu consumo estimado, y tus preferencias. A través de nuestra plataforma, recibirás las recomendaciones más eficientes y económicas, todo de manera rápida, sencilla, y sin complicaciones.</p>
+        <p>Con EnergyTelco, tienes todo en un solo lugar, sin estrés ni intermediarios innecesarios.</p>
+    </section>
+
     <!-- Sección de Asesoría Energética -->
     <section id="asesoria-energetica">
-        <h2>Asesoría Energética Personalizada</h2>
-        <p>Sube tu factura de energía y te ayudaremos a encontrar la mejor oferta del mercado.</p>
-        
-        <form id="form-factura" enctype="multipart/form-data">
-            <label for="factura">Sube tu factura:</label>
-            <input type="file" id="factura" name="factura" accept=".pdf,.jpg,.png" required>
-            
+        <h2>Formulario de Asesoría Energética Personalizada</h2>
+        <form id="form-factura" enctype="multipart/form-data" method="POST" action="procesar_formulario.php">
+            <!-- Datos del Usuario -->
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <!-- Subida de facturas -->
+            <label for="factura">Sube tu factura de Luz (PDF/Imagen):</label>
+            <input type="file" id="factura" name="factura-luz" accept=".pdf,.jpg,.png" required>
+
+            <label for="factura-gas">¿Usas Gas? Sube tu Factura de Gas:</label>
+            <input type="file" id="factura-gas" name="factura-gas" accept=".pdf,.jpg,.png">
+
             <label for="consumo">Consumo estimado (kWh):</label>
             <input type="number" id="consumo" name="consumo" required>
+
+            <!-- Preferencias -->
+            <label for="tipo-combustible">Tipo de Combustible Utilizado:</label>
+            <select id="tipo-combustible" name="tipo-combustible" required>
+                <option value="electricidad">Electricidad</option>
+                <option value="gas">Gas</option>
+                <option value="propano">Propano</option>
+                <option value="otros">Otros</option>
+            </select>
+
+            <!-- Ubicación -->
+            <label for="ubicacion">Código Postal:</label>
+            <input type="text" id="ubicacion" name="ubicacion" required>
+
+            <!-- Preferencias Energéticas -->
+            <label for="interes-renovables">¿Interesado en Energías Renovables?</label>
+            <select id="interes-renovables" name="interes-renovables" required>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="presupuesto">Presupuesto estimado para mejoras energéticas:</label>
+            <input type="number" id="presupuesto" name="presupuesto">
 
             <button type="submit">Enviar factura</button>
         </form>
@@ -43,22 +86,20 @@
     <footer>
         <p>© 2024 EnergyTelco. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Chatbot flotante -->
+    <div id="chatbot">
+        <div id="chat-icon" onclick="toggleChat()">
+            💬
+        </div>
+        <div id="chat-window" class="hidden">
+            <div id="chat-header">
+                <h3>Asistente EnergyTelco</h3>
+                <button onclick="toggleChat()">X</button>
+            </div>
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Escribe tu mensaje..." onkeydown="handleChat(event)">
+        </div>
+    </div>
 </body>
 </html>
-
-<!-- Chatbot flotante -->
-<div id="chatbot">
-    <div id="chat-icon" onclick="toggleChat()">
-        💬
-    </div>
-    <div id="chat-window" class="hidden">
-        <div id="chat-header">
-            <h3>Asistente EnergyTelco</h3>
-            <button onclick="toggleChat()">X</button>
-        </div>
-        <div id="chat-messages">
-            <!-- Mensajes del chatbot aparecerán aquí -->
-        </div>
-        <input type="text" id="chat-input" placeholder="Escribe tu mensaje..." onkeydown="handleChat(event)">
-    </div>
-</div>
